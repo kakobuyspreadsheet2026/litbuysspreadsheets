@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/images/litbuy-logo.png" type="image/png" />
-    <title>Guides | Litbuy spreadsheet workflow, QC &amp; shipping</title>
+    <title>Guías | Litbuy spreadsheet — flujo de trabajo, control de calidad y envío</title>
     <meta
       name="description"
-      content="Step-by-step: browse the MaisonLooks hub, paste Taobao / Weidian / 1688 links into Litbuy, top up wallet, approve warehouse QC, then ship. Merchant notes—not official Litbuy docs."
+      content="Paso a paso: explora el hub MaisonLooks, pega enlaces de Taobao / Weidian / 1688 en Litbuy, recarga el monedero, acepta el control de calidad en almacén y envía. Notas de vendedores — no es la documentación oficial de Litbuy."
     />
     <link rel="canonical" href="https://litbuysspreadsheets.com/es/guides.html" />
     <link rel="alternate" hreflang="en" href="https://litbuysspreadsheets.com/guides.html" />
@@ -18,10 +18,10 @@
     <link rel="alternate" hreflang="x-default" href="https://litbuysspreadsheets.com/guides.html" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://litbuysspreadsheets.com/es/guides.html" />
-    <meta property="og:title" content="Litbuy spreadsheet guides | Workflow &amp; tips" />
+    <meta property="og:title" content="Guías Litbuy spreadsheet | Flujo de trabajo" />
     <meta
       property="og:description"
-      content="From spreadsheet rows to Litbuy checkout: discovery here, wallet and warehouse QC on Litbuy."
+      content="De las filas del spreadsheet al pago en Litbuy: descubrimiento aquí, monedero y control de calidad en almacén en Litbuy."
     />
     <meta property="og:image" content="https://litbuysspreadsheets.com/images/hub-module-lookbook.png" />
     <meta property="og:image:width" content="1024" />
@@ -33,9 +33,10 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Litbuy spreadsheet guides",
+        "name": "Guías Litbuy spreadsheet",
         "url": "https://litbuysspreadsheets.com/es/guides.html",
-        "description": "Workflow guide for Litbuy spreadsheet buyers: hub discovery, Litbuy orders, warehouse QC, international shipping.",
+        "inLanguage": "es",
+        "description": "Guía de flujo para compradores del Litbuy spreadsheet: hub, pedidos, control de calidad en almacén y envío internacional.",
         "isPartOf": { "@id": "https://litbuysspreadsheets.com/#website" }
       }
     </script>
@@ -54,18 +55,18 @@
             <li class="has-sub">
               <button type="button" aria-expanded="false" aria-haspopup="true">Todas las categorías</button>
               <div class="submenu" role="menu">
-                <a href="https://maisonlooks.com/en/c/shoes" role="menuitem">Shoes</a>
-                <a href="https://maisonlooks.com/en/c/jackets" role="menuitem">Jackets</a>
-                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Hoodies / Sweaters</a>
-                <a href="https://maisonlooks.com/en/c/t-shirts" role="menuitem">T-Shirts</a>
-                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Pants / Shorts</a>
-                <a href="https://maisonlooks.com/en/products" role="menuitem">Bags</a>
-                <a href="https://maisonlooks.com/en/c/headwear" role="menuitem">Headwear</a>
-                <a href="https://maisonlooks.com/en/c/accessories" role="menuitem">Accessories</a>
-                <a href="https://maisonlooks.com/en/c/electronics" role="menuitem">Electronics</a>
-                <a href="https://maisonlooks.com/en/c/perfume" role="menuitem">Perfume</a>
-                <a href="https://maisonlooks.com/en/products" role="menuitem">Jersey</a>
-                <a href="https://maisonlooks.com/en/products" role="menuitem">Other</a>
+                <a href="https://maisonlooks.com/en/c/shoes" role="menuitem">Zapatos</a>
+                <a href="https://maisonlooks.com/en/c/jackets" role="menuitem">Chaquetas</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Sudaderas / jerseys</a>
+                <a href="https://maisonlooks.com/en/c/t-shirts" role="menuitem">Camisetas</a>
+                <a href="https://maisonlooks.com/en/c/clothing" role="menuitem">Pantalones / shorts</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Bolsos</a>
+                <a href="https://maisonlooks.com/en/c/headwear" role="menuitem">Gorros / sombreros</a>
+                <a href="https://maisonlooks.com/en/c/accessories" role="menuitem">Accesorios</a>
+                <a href="https://maisonlooks.com/en/c/electronics" role="menuitem">Electrónica</a>
+                <a href="https://maisonlooks.com/en/c/perfume" role="menuitem">Perfumes</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Camisetas deportivas</a>
+                <a href="https://maisonlooks.com/en/products" role="menuitem">Más</a>
               </div>
             </li>
             <li><a href="guides.html" aria-current="page">Guías</a></li>
@@ -105,139 +106,143 @@
       <header class="subpage-header">
         <div class="container">
           <p class="breadcrumb"><a href="/es/">Inicio</a> · Guías</p>
-          <h1>Guides: from hub rows to Litbuy parcels</h1>
+          <h1>Guías: de las filas del hub a los paquetes de Litbuy</h1>
           <p class="lead">
-            These notes describe the usual <strong>agent-shopping split</strong> our buyers follow: discover and compare
-            on the spreadsheet hub (MaisonLooks), then run every payment, inspection ticket, and shipment decision
-            inside <strong>Litbuy</strong>. They are merchant-written tips—not a substitute for
-            <a href="https://litbuy.com/help" rel="noopener noreferrer">Litbuy’s own help center</a>.
+            Estas notas describen el <strong>reparto típico con agente</strong> que suelen seguir nuestros compradores:
+            descubrir y comparar en el hub del spreadsheet (MaisonLooks) y llevar cada pago, incidencia de inspección y
+            decisión de envío dentro de <strong>Litbuy</strong>. Son consejos redactados por vendedores — no sustituyen al
+            <a href="https://litbuy.com/help" rel="noopener noreferrer">centro de ayuda oficial de Litbuy</a>.
           </p>
         </div>
       </header>
 
       <section class="section subpage-section" aria-labelledby="toc-title">
         <div class="container">
-          <h2 id="toc-title" class="visually-hidden">On this page</h2>
-          <nav class="subpage-toc" aria-label="Page sections">
-            <strong>On this page</strong>
+          <h2 id="toc-title" class="visually-hidden">En esta página</h2>
+          <nav class="subpage-toc" aria-label="Secciones de la página">
+            <strong>En esta página</strong>
             <ul>
-              <li><a href="#split">Why discovery and checkout live in two places</a></li>
-              <li><a href="#steps">End-to-end steps</a></li>
-              <li><a href="#wallet">Wallet, fees, and domestic purchase</a></li>
-              <li><a href="#qc">Warehouse QC vs. seller photos</a></li>
-              <li><a href="#ship">Consolidation and international shipping</a></li>
-              <li><a href="#pitfalls">Common pitfalls</a></li>
+              <li><a href="#split">Por qué el descubrimiento y el pago están en dos sitios</a></li>
+              <li><a href="#steps">Pasos de principio a fin</a></li>
+              <li><a href="#wallet">Monedero, comisiones y compra doméstica</a></li>
+              <li><a href="#qc">Control de calidad en almacén frente a fotos del vendedor</a></li>
+              <li><a href="#ship">Consolidación y envío internacional</a></li>
+              <li><a href="#pitfalls">Errores habituales</a></li>
             </ul>
           </nav>
 
           <article class="content-block" id="split">
-            <h2>Why discovery and checkout live in two places</h2>
+            <h2>Por qué el descubrimiento y el pago están en dos sitios</h2>
             <p>
-              Chinese marketplaces (Taobao, Weidian, 1688) are built for domestic buyers. A shopping agent such as
-              Litbuy fronts the local payment, receives the parcel at a warehouse in China, photographs it for you,
-              and only then ships internationally. Our <strong>Litbuy spreadsheet</strong> is the curated
-              <em>front window</em>: rows of links, short notes, and lane tags so you can compare batches before you
-              commit. The agent account is where money moves and where policies apply.
+              Los marketplaces chinos (Taobao, Weidian, 1688) están pensados para compradores locales. Un agente de
+              compras como Litbuy adelanta el pago local, recibe el paquete en un almacén en China, lo fotografía para ti
+              y solo entonces lo envía al extranjero. Nuestro <strong>Litbuy spreadsheet</strong> es el
+              <em>escaparate</em> curado: filas de enlaces, notas breves y etiquetas de carril para comparar lotes antes
+              de comprometerte. En la cuenta del agente es donde circula el dinero y donde aplican las políticas.
             </p>
           </article>
 
           <article class="content-block" id="steps">
-            <h2>End-to-end steps</h2>
+            <h2>Pasos de principio a fin</h2>
             <ol class="step-list">
               <li>
-                <strong>Browse the hub</strong> — Open the live catalog from
-                <a href="spreadsheet.html">Spreadsheet</a> (MaisonLooks). Filter by category, read row notes, and open
-                listings in new tabs if you need size charts or extra photos.
+                <strong>Explora el hub</strong> — Abre el catálogo en vivo desde
+                <a href="spreadsheet.html">Spreadsheet</a> (MaisonLooks). Filtra por categoría, lee las notas de cada
+                fila y abre los anuncios en pestañas nuevas si necesitas tablas de tallas o más fotos.
               </li>
               <li>
-                <strong>Copy the product URL</strong> — Use the canonical marketplace link from the row you want. If a
-                listing 404s, pick another row or ask in <a href="contact.html">Discord</a>; inventory churn is normal.
+                <strong>Copia la URL del producto</strong> — Usa el enlace canónico del marketplace en la fila que
+                elijas. Si el anuncio devuelve error, elige otra fila o pregunta en <a href="contact.html">Discord</a>;
+                que desaparezcan ofertas es habitual.
               </li>
               <li>
-                <strong>Submit on Litbuy</strong> — Paste the link into Litbuy’s order flow, choose options (size,
-                color), and confirm. Double-check title and seller before you pay.
+                <strong>Tramita el pedido en Litbuy</strong> — Pega el enlace en el flujo de pedido de Litbuy, elige
+                opciones (talla, color) y confirma. Revisa título y vendedor antes de pagar.
               </li>
               <li>
-                <strong>Fund the order</strong> — Top up your Litbuy wallet or pay per checkout, following whatever
-                methods Litbuy currently supports. This site never handles cards or balances.
+                <strong>Financia el pedido</strong> — Recarga el monedero de Litbuy o paga por pedido, según los métodos
+                que Litbuy admita en ese momento. Este sitio no gestiona tarjetas ni saldos.
               </li>
               <li>
-                <strong>Wait for arrival &amp; QC</strong> — After the domestic leg, Litbuy receives the item and posts
-                warehouse photos. Approve or start a ticket from <em>those</em> images—not from the spreadsheet
-                thumbnail alone.
+                <strong>Espera la llegada y el control de calidad</strong> — Tras el tramo doméstico, Litbuy recibe el
+                artículo y publica fotos del almacén. Aprueba o abre un ticket a partir de <em>esas</em> imágenes — no
+                solo de la miniatura del spreadsheet.
               </li>
               <li>
-                <strong>Ship internationally</strong> — When you are happy with QC, submit packing and choose a carrier
-                line to your country. Consolidate multiple items when it saves on postage.
+                <strong>Envía al extranjero</strong> — Cuando el control de calidad te convenza, solicita el embalaje y
+                elige una línea de transporte a tu país. Consolida varios artículos cuando compense el coste del envío.
               </li>
             </ol>
             <div class="split-cta">
-              <a class="btn btn-primary" href="https://maisonlooks.com/?utm_source=litbuy_sheet_seo&amp;utm_medium=referral&amp;utm_campaign=guides_hub">Open hub</a>
+              <a class="btn btn-primary" href="https://maisonlooks.com/?utm_source=litbuy_sheet_seo&amp;utm_medium=referral&amp;utm_campaign=guides_hub">Abrir hub</a>
               <a class="btn btn-ghost" href="https://litbuy.com/" rel="noopener noreferrer">Litbuy.com</a>
             </div>
           </article>
 
           <article class="content-block" id="wallet">
-            <h2>Wallet, fees, and domestic purchase</h2>
+            <h2>Monedero, comisiones y compra doméstica</h2>
             <p>
-              Agent pricing usually combines item cost, domestic shipping to the warehouse, a service fee, and later
-              international freight. Exact percentages and promotions change—verify inside Litbuy before you fund a
-              haul. Keep a small buffer in your wallet so a restock does not stall a time-sensitive drop.
+              La tarifa del agente suele incluir el coste del artículo, el envío doméstico al almacén, una comisión de
+              servicio y, más adelante, el flete internacional. Los porcentajes exactos y las promociones cambian —
+              compruébalo en Litbuy antes de cargar fondos para un haul. Mantén un pequeño colchón en el monedero para
+              que un restock no retrase un drop con fecha límite.
             </p>
-            <h3>Chargebacks and disputes</h3>
+            <h3>Contracargos y disputas</h3>
             <p>
-              Treat Litbuy as the merchant of record for your order. If something goes wrong after payment, use Litbuy’s
-              ticket system and published policies. We cannot reverse or edit orders from this marketing site.
+              Trata a Litbuy como el comerciante responsable de tu pedido. Si algo falla tras el pago, usa el sistema de
+              tickets de Litbuy y sus políticas publicadas. No podemos revertir ni editar pedidos desde este sitio de
+              marketing.
             </p>
           </article>
 
           <article class="content-block" id="qc">
-            <h2>Warehouse QC vs. seller photos</h2>
+            <h2>Control de calidad en almacén frente a fotos del vendedor</h2>
             <p>
-              Rows on the spreadsheet may include seller QC or factory photos. They help you guess fabric weight,
-              logo placement, or batch variance. The inspection that matters for shipping is the set Litbuy shoots under
-              warehouse lighting after the item arrives. If the two disagree, assume the warehouse set is authoritative
-              for accept / reject.
+              Las filas del spreadsheet pueden incluir fotos de control del vendedor o de fábrica — ayudan a intuir el
+              peso de la tela, la posición del logo o las variaciones entre lotes. La inspección que importa para el
+              envío es el set que Litbuy hace con luz de almacén cuando llega el artículo. Si no coinciden, asume que el
+              álbum del almacén es el que vale para aceptar o rechazar.
             </p>
           </article>
 
           <article class="content-block" id="ship">
-            <h2>Consolidation and international shipping</h2>
+            <h2>Consolidación y envío internacional</h2>
             <p>
-              Most buyers let several items arrive, then repack into one box to save on volumetric charges. Declare
-              truthfully for customs; your country’s import rules are your responsibility. Storage time limits and fees
-              are defined by Litbuy—check their latest help articles before you pause a haul for weeks.
+              La mayoría deja llegar varios artículos y luego los reempaqueta en una sola caja para ahorrar en cargos
+              volumétricos. Declara con veracidad en aduanas; las normas de importación de tu país son tu
+              responsabilidad. Los plazos de almacenamiento y tasas los fija Litbuy — consulta sus artículos de ayuda
+              más recientes antes de dejar un haul parado semanas.
             </p>
           </article>
 
           <article class="content-block" id="pitfalls">
-            <h2>Common pitfalls</h2>
+            <h2>Errores habituales</h2>
             <ul>
               <li>
-                <strong>Wrong SKU</strong> — Taobao and Weidian URLs often encode a specific colorway. Pasting a
-                shortened or stale link can order the wrong variant.
+                <strong>SKU incorrecto</strong> — Las URL de Taobao y Weidian suelen codificar un color o variante
+                concreta. Pegar un enlace acortado o antiguo puede pedir la variante equivocada.
               </li>
               <li>
-                <strong>Size drift</strong> — Factory batches change. A note from six months ago may not match today’s
-                measurement chart.
+                <strong>Tallas y lotes</strong> — Los lotes de fábrica cambian. Una nota de hace seis meses puede no
+                coincidir con la tabla de medidas de hoy.
               </li>
               <li>
-                <strong>Replicas and restrictions</strong> — Some categories are high risk for customs or platform rules.
-                You are responsible for what you submit to Litbuy.
+                <strong>Réplicas y restricciones</strong> — Algunas categorías conllevan más riesgo en aduana o en las
+                normas de la plataforma. Tú eres responsable de lo que envías a Litbuy.
               </li>
               <li>
-                <strong>“Official spreadsheet” scams</strong> — This domain is independent. Only trust payment URLs on
-                <strong>litbuy.com</strong> (or the agent’s verified domain) for checkout.
+                <strong>Estafas del «spreadsheet oficial»</strong> — Este dominio es independiente. Para pagar, confía
+                solo en URL en <strong>litbuy.com</strong> (o el dominio verificado del agente).
               </li>
             </ul>
           </article>
 
           <article class="content-block">
-            <h2>Related links</h2>
+            <h2>Enlaces relacionados</h2>
             <ul>
-              <li><a href="/es/#hub-ai-tools">Hub AI tools</a> (Editor’s picks, search, styling) on the homepage</li>
-              <li><a href="news.html">News</a> for irregular workflow reminders</li>
-              <li><a href="contact.html">Contact</a> — Discord for community questions</li>
+              <li><a href="/es/#hub-ai-tools">Herramientas de IA del hub</a> en la página de inicio</li>
+              <li><a href="news.html">Noticias</a> — recordatorios puntuales del flujo</li>
+              <li><a href="contact.html">Contacto</a> — Discord</li>
             </ul>
           </article>
         </div>
@@ -247,15 +252,15 @@
     <footer class="site-footer">
       <div class="container">
         <p>
-          <strong>Disclaimer:</strong> This is an independent marketing page for Litbuy spreadsheet merchants. It does
-          not sell goods or move money. Use Litbuy for checkout, warehouse QC, and shipping.
+          <strong>Aviso legal:</strong> Sitio de marketing independiente de vendedores del Litbuy spreadsheet. No vende
+          mercancía ni procesa pagos. Caja, control de calidad en almacén y envío — solo en Litbuy.
         </p>
         <p class="footer-links">
           <a href="https://discord.gg/9hrqg53zgs" target="_blank" rel="noopener noreferrer">Discord</a>
           <a href="https://maisonlooks.com/?utm_source=litbuy_sheet_seo&amp;utm_medium=referral&amp;utm_campaign=footer">MaisonLooks</a>
-          <a href="https://litbuy.com/help" rel="noopener noreferrer">Litbuy Help</a>
+          <a href="https://litbuy.com/help" rel="noopener noreferrer">Ayuda Litbuy</a>
         </p>
-        <p>© <span id="y"></span> litbuy spreadsheet — Litbuy platform merchants.</p>
+        <p>© <span id="y"></span> litbuy spreadsheet — vendedores en la plataforma Litbuy.</p>
       </div>
     </footer>
     <script>
