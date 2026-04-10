@@ -1,0 +1,5 @@
+# Replace host with your live domain (same as canonical URLs in HTML).
+User-agent: *
+Allow: /
+
+Sitemap: https://litbuysspreadsheets.com/sitemap.xml
